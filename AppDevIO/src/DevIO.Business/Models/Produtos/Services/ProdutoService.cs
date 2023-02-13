@@ -1,4 +1,5 @@
-﻿using DevIO.Business.Core.Services;
+﻿using DevIO.Business.Core.Notificacoes;
+using DevIO.Business.Core.Services;
 using DevIO.Business.Models.Produtos.Validations;
 using System;
 using System.Collections.Generic;
@@ -12,13 +13,14 @@ namespace DevIO.Business.Models.Produtos.Services
     {
         private readonly IProdutoRepository _produtoRepository;
 
-        public ProdutoService(IProdutoRepository produtoRepository)
+        public ProdutoService(IProdutoRepository produtoRepository, INotificador notificador) : base(notificador)
         {
             _produtoRepository = produtoRepository;
         }
         public async Task Adicionar(Produto produto)
         {
             if (!ExecutarValidacao(new ProdutoValidation(), produto)) return;
+
 
             await _produtoRepository.Adicionar(produto);
         }
