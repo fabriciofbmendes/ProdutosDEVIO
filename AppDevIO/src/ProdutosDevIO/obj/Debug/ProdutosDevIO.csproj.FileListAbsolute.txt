@@ -111,3 +111,5 @@ C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\Pro
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\obj\Debug\ProdutosDevIO.csproj.CopyComplete
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\obj\Debug\ProdutosDevIO.dll
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\obj\Debug\ProdutosDevIO.pdb
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\FluentValidation.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\FluentValidation.xml

@@ -3,3 +3,7 @@ C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\Pro
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.csproj.CoreCompileInputs.cache
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.dll
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.pdb
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\bin\Debug\FluentValidation.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\bin\Debug\FluentValidation.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.csprojAssemblyReference.cache
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.csproj.CopyComplete
