@@ -1,4 +1,5 @@
-﻿using DevIO.Business.Core.Notificacoes;
+﻿using AutoMapper;
+using DevIO.Business.Core.Notificacoes;
 using DevIO.Business.Models.Produtos;
 using DevIO.Business.Models.Produtos.Services;
 using DevIO.Infra.Data.Repository;
@@ -16,18 +17,18 @@ namespace ProdutosDevIO.Controllers
     {
             private readonly IProdutoRepository _produtoRepository;
             private readonly IProdutoService _produtoService;
+            private readonly IMapper _mapper;
 
             public ProdutosController()
             {
-            _produtoRepository = new ProdutoRepository();
-            _produtoService = new ProdutoService(_produtoRepository,new Notificador());
+                
             }
 
             [Route("lista-de-produtos")]
             [HttpGet]
             public async Task<ActionResult> Index()
             {
-                return View(await _produtoRepository.ObterTodos());
+                return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterTodos()));
             }
 
             [Route("dados-do-produto/{id:guid}")]
@@ -58,7 +59,7 @@ namespace ProdutosDevIO.Controllers
             {
                 if (ModelState.IsValid)
                 {
-
+                    await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
                     return RedirectToAction("Index");
                 }
 
@@ -126,7 +127,8 @@ namespace ProdutosDevIO.Controllers
 
             private async Task<ProdutoViewModel> ObterProduto(Guid id)
             {
-                return new ProdutoViewModel();
+                var produto = _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterProdutoFornecedor(id));
+                return produto;
             }
 
             protected override void Dispose(bool disposing)
