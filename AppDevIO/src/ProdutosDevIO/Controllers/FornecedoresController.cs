@@ -1,4 +1,5 @@
-﻿using DevIO.Business.Models.Fornecedores;
+﻿using DevIO.Business.Core.Notificacoes;
+using DevIO.Business.Models.Fornecedores;
 using DevIO.Business.Models.Fornecedores.Services;
 using DevIO.Infra.Data.Repository;
 using System;
@@ -10,13 +11,17 @@ using System.Web.Mvc;
 
 namespace ProdutosDevIO.Controllers
 {
-    public class FornecedoresController : Controller
+    public class FornecedoresController : BaseController
     {
+        private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IFornecedorService _fornecedorService;
 
-        public FornecedoresController()
+        public FornecedoresController(IFornecedorRepository fornecedorRepository,
+                                      IFornecedorService fornecedorService,
+                                      INotificador notificador) : base(notificador)
         {
-            _fornecedorService = new FornecedorService(new FornecedorRepository(),new EnderecoRepository());
+            _fornecedorRepository = fornecedorRepository;
+            _fornecedorService = fornecedorService;
         }
 
         public async Task<ActionResult> Index()
