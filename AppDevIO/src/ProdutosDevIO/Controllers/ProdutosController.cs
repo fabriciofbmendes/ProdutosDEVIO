@@ -87,7 +87,7 @@ namespace ProdutosDevIO.Controllers
             {
                 if (ModelState.IsValid)
                 {
-
+                    await _produtoService.Atualizar(_mapper.Map<Produto>(produtoViewModel));
                     return RedirectToAction("Index");
                 }
 
@@ -120,7 +120,7 @@ namespace ProdutosDevIO.Controllers
                 {
                     return HttpNotFound();
                 }
-
+                await _produtoService.Remover(id);
 
                 return RedirectToAction("Index");
             }
@@ -133,7 +133,12 @@ namespace ProdutosDevIO.Controllers
 
             protected override void Dispose(bool disposing)
             {
-                
+                if (disposing)
+                {
+                    _produtoRepository.Dispose();
+                    _produtoService.Dispose();
+                }
+                base.Dispose(disposing);
             }
         }
     }
