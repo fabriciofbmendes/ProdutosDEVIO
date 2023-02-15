@@ -4,11 +4,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Linq;
+using DevIO.Infra.Data.Context;
 
 namespace DevIO.Infra.Data.Repository
 {
     public class ProdutoRepository : Repository<Produto>, IProdutoRepository
     {
+
+
+        public ProdutoRepository(MeuDbContext context) : base(context) { }
+
         public async Task<Produto> ObterProdutoFornecedor(Guid id)
         {
             return await Db.Produtos.AsNoTracking()

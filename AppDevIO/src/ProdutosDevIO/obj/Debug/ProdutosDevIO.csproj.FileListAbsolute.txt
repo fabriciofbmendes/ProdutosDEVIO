@@ -113,3 +113,17 @@ C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\Pro
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\obj\Debug\ProdutosDevIO.pdb
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\FluentValidation.dll
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\FluentValidation.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\AutoMapper.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.Integration.Web.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\AutoMapper.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.Integration.Web.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\ProdutosDevIO\bin\System.Threading.Tasks.Extensions.xml
