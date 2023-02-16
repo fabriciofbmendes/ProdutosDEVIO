@@ -54,6 +54,7 @@
     </div>
 }
 
+
 <div id="myModal" class="modal fade in">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -62,16 +63,16 @@
     </div>
 </div>
 
-<div id="EnderecoTarget">
+<div>
     @Html.Partial("_DetalhesEndereco")
 </div>
 
-@section Scripts {
+@section Scripts{
     @Scripts.Render("~/bundles/jqueryval")
 
     <script>
         $(document).ready(function () {
             SetModal();
-        });
+        })
     </script>
-}
+    }

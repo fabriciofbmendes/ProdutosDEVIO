@@ -6,3 +6,4 @@ C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\Pro
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\bin\Debug\FluentValidation.dll
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\bin\Debug\FluentValidation.xml
 C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.csproj.CopyComplete
+C:\Users\fabri\OneDrive\Área de Trabalho\Programacao\Cursos\DesenvolvedorIO\ProdutosDEVIO\AppDevIO\src\DevIO.Business\obj\Debug\DevIO.Business.csprojAssemblyReference.cache

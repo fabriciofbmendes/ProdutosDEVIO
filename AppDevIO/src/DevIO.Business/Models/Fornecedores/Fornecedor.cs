@@ -20,13 +20,5 @@ namespace DevIO.Business.Models.Fornecedores
         /* EF Relations */
         public ICollection<Produto> Produtos { get; set; }
 
-
-        public bool Validao() {
-            var validacao = new FornecedorValidation();
-            var resultado = validacao.Validate(this);
-
-            return resultado.IsValid;
-        }
-
     }
 }
