@@ -14,7 +14,6 @@
 
     <div class="form-horizontal">
 
-        @Html.ValidationSummary(true, "", new {@class="text-danger"})
 
         <div class="form-group">
             @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -47,13 +46,10 @@
             </div>
         </div>
 
-        <h4>Endereco</h4>
+        <h4>Endereço</h4>
         <hr />
 
         @Html.Partial("_Endereco")
-
-        <h4>Endereço</h4>
-        <hr />
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-3">
@@ -69,6 +65,7 @@
     @Scripts.Render("~/bundles/jqueryval")
 
     <script>
+        BuscaCep();
     </script>
 }
 
