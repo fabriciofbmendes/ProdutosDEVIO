@@ -1,4 +1,5 @@
-﻿@model ProdutosDevIO.ViewModels.FornecedorViewModel
+﻿@using ProdutosDevIO.Extensions
+@model ProdutosDevIO.ViewModels.FornecedorViewModel
 
 <div style="padding-top: 50px">
     <div>
@@ -59,8 +60,11 @@
                     @Html.DisplayFor(model => model.Endereco.Estado)
                 </td>
                 <td>
+                    @if (this.ExibirNaUrl(Model.Id))
+                    {
+                        <a class="btn btn-info" href="@Url.Action("AtualizarEndereco", "Fornecedores", new {id = Model.Id})" data-modal=""><spam class="glyphicon glyphicon-pencil"></spam> </a>
 
-                    <a class="btn btn-info" href="@Url.Action("AtualizarEndereco", "Fornecedores", new {id = Model.Id})" data-modal=""><spam class="glyphicon glyphicon-pencil"></spam> </a>
+                    }
                 </td>
             </tr>
         </table>

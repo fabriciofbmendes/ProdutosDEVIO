@@ -8,6 +8,7 @@ namespace ProdutosDevIO.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("Inicio")]
         public ActionResult Index()
         {
             return View();

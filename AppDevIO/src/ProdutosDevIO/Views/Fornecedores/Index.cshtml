@@ -1,4 +1,5 @@
-﻿@model IEnumerable<ProdutosDevIO.ViewModels.FornecedorViewModel>
+﻿@using ProdutosDevIO.Extensions
+@model IEnumerable<ProdutosDevIO.ViewModels.FornecedorViewModel>
 
 @{
     ViewBag.Title = "Lista de Fornecedores";
@@ -36,7 +37,7 @@
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Documento)
+                    @this.FormatarDocumento(item.TipoFornecedor,item.Documento)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Ativo)
