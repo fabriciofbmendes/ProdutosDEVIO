@@ -32,6 +32,19 @@ namespace ProdutosDevIO.Controllers
         }
 
 
+        [Route("dados-do-fornecedor/{id:guid}")]
+        public async Task<ActionResult> Details(Guid id)
+        {
+            var fornecedorViewModel = await ObterFornecedorEndereco(id);
+            if (fornecedorViewModel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(fornecedorViewModel);
+        }
+
+
+
         [Route("novo-fornecedor")]
         public ActionResult Create()
         {
