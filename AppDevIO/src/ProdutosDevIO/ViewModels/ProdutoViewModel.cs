@@ -1,4 +1,5 @@
 ﻿using DevIO.Business.Models.Fornecedores;
+using ProdutosDevIO.Extensions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace ProdutosDevIO.ViewModels
         public HttpPostedFileBase ImagemUpload { get; set; }
         public string Imagem { get; set; }
 
-
+        [Moeda]
         [Required(ErrorMessage ="O campo {0} e obrigatorio")]
         public decimal Valor { get; set; }
         [ScaffoldColumn(false)]
