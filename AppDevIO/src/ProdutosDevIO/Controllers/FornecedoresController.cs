@@ -3,6 +3,7 @@ using DevIO.Business.Core.Notificacoes;
 using DevIO.Business.Models.Fornecedores;
 using DevIO.Business.Models.Fornecedores.Services;
 using DevIO.Infra.Data.Repository;
+using ProdutosDevIO.Extensions;
 using ProdutosDevIO.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -63,13 +64,14 @@ namespace ProdutosDevIO.Controllers
             return PartialView("_DetalhesEndereco", fornecedor);
         }
 
-
+        [ClaimsAuthorize("Fornecedor", "Adicionar")]
         [Route("novo-fornecedor")]
         public ActionResult Create()
         {
             return View();
         }
 
+        [ClaimsAuthorize("Fornecedor","Adicionar")]
         [Route("novo-fornecedor")]
         [HttpPost]
         public async Task<ActionResult> Create(FornecedorViewModel fornecedorViewModel)
@@ -87,7 +89,7 @@ namespace ProdutosDevIO.Controllers
 
 
 
-
+        [ClaimsAuthorize("Fornecedor", "Editar")]
         [Route("editar-fornecedor/{id:guid}")]
         public async Task<ActionResult> Edit(Guid id)
         {
@@ -102,7 +104,7 @@ namespace ProdutosDevIO.Controllers
         }
 
 
-
+        [ClaimsAuthorize("Fornecedor", "Editar")]
         [Route("editar-fornecedor/{id:guid}")]
         [HttpPost]
         public async Task<ActionResult> Edit(Guid id, FornecedorViewModel fornecedorViewModel)
@@ -119,7 +121,7 @@ namespace ProdutosDevIO.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles ="Admin,Coordenador")]
+        [ClaimsAuthorize("Fornecedor", "Excluir")]
         [Route("excluir-fornecedor/{id:guid}")]
         public async Task<ActionResult> Delete(Guid id)
         {
@@ -132,7 +134,8 @@ namespace ProdutosDevIO.Controllers
 
             return View(fornecedorViewModel);
         }
-        [Authorize(Roles = "Admin,Coordenador")]
+
+        [ClaimsAuthorize("Fornecedor", "Excluir")]
         [Route("excluir-fornecedor/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         public async Task<ActionResult> DeleteConfirmed(Guid id)
