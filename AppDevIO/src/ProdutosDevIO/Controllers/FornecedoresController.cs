@@ -19,7 +19,10 @@ namespace ProdutosDevIO.Controllers
         private readonly IFornecedorService _fornecedorService;
         private readonly IMapper _mapper;
 
-        public FornecedoresController(IFornecedorRepository fornecedorRepository, IFornecedorService fornecedorService, IMapper mapper)
+        public FornecedoresController(IFornecedorRepository fornecedorRepository, 
+            IFornecedorService fornecedorService,
+            IMapper mapper,
+            INotificador notificador) : base(notificador)
         {
             _fornecedorRepository = fornecedorRepository;
             _fornecedorService = fornecedorService;
@@ -73,6 +76,7 @@ namespace ProdutosDevIO.Controllers
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
             await _fornecedorService.Adicionar(fornecedor);
 
+            if (!OperacaoValida()) return View(fornecedorViewModel);
 
             return RedirectToAction("Index");
         }

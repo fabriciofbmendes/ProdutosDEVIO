@@ -24,7 +24,6 @@ namespace ProdutosDevIO.App_Start
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 
-            container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
             InitializeContainer(container);
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
             container.Verify();

@@ -15,14 +15,17 @@ using System.Web.Mvc;
 
 namespace ProdutosDevIO.Controllers
 {
-    public class ProdutosController : Controller
+    public class ProdutosController : BaseController
     {
         private readonly IProdutoRepository _produtoRepository;
         private readonly IProdutoService _produtoService;
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IMapper _mapper;
 
-        public ProdutosController(IProdutoRepository produtoRepository, IProdutoService produtoService, IMapper mapper, IFornecedorRepository fornecedorRepository)
+        public ProdutosController(IProdutoRepository produtoRepository, 
+            IProdutoService produtoService, IMapper mapper, 
+            IFornecedorRepository fornecedorRepository,
+            INotificador notificador) : base(notificador)
         {
             _produtoRepository = produtoRepository;
             _produtoService = produtoService;
